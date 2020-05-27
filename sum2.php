@@ -1,24 +1,26 @@
 <?php
 function bai($max){
-    echo $max * 2;
+    $a = $max * 2;
+    return $a;
 } 
-bai(2);
-bai(3);
+echo bai(2);
+echo bai(3);
 ?>
 
 <?php
 function f($a, $b){
- echo $a + $b;
+ $b = $a + $b;
+ return $b;
  }
- f(7,8);
- f(9,10);
+ echo f(7,8);
+ echo f(9,10);
 ?>
 
 <?php
  function d($arr){
      $e = array(1,3,5,7,9);
      foreach($e as $f){
-         echo $f * $arr;
+        echo $f * $arr;
      }
  }
  d(7);
